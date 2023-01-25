@@ -8,13 +8,10 @@
       <script type="text/javascript">
          var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}});
       </script>
-      <link rel="apple-touch-icon" sizes="180x180" href="favicons/favicon-apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-favicon-16x16.png">
-      <link rel="manifest" href="https://mindtitan.com/wp-content/themes/mindtitan/inc/theme/favicon/manifest.json">
-      <link rel="mask-icon" href="https://mindtitan.com/wp-content/themes/mindtitan/inc/theme/favicon/safari-pinned-tab.svg" color="#ffffff">
-      <link rel="shortcut icon" href="favicons/favicon-favicon.ico">
-      <meta name="msapplication-config" content="https://mindtitan.com/wp-content/themes/mindtitan/inc/theme/favicon/browserconfig.xml">
+      <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+      <link rel="shortcut icon" href="favicons/favicon.ico">
       <meta name="theme-color" content="#ffffff">
       <script type="rocketlazyloadscript">(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
       <link rel="preconnect" href="https://fonts.gstatic.com">
